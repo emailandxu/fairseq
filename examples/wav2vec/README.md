@@ -115,6 +115,13 @@ $ fairseq-hydra-train \
     model.w2v_path=/path/to/model.pt \
     --config-dir /path/to/fairseq-py/examples/wav2vec/config/finetuning \
     --config-name base_100h
+
+
+    fairseq-hydra-train \
+    task.data=/home/tony/fairseq/examples/wav2vec/data \
+    model.w2v_path=/home/tony/D/exp/wav2vec2/wav2vec_small.pt \
+    --config-dir /home/tony/fairseq/examples/wav2vec/config/finetuning \
+    --config-name base_100h
 ```
 
 There are other config files in the config/finetuning directory that can be used to fine-tune on other splits.
